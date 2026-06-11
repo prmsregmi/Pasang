@@ -10,8 +10,8 @@ services:
       - "traefik.http.routers.pasang.tls.certresolver=letsencrypt"
       - "traefik.http.services.pasang.loadbalancer.server.port=80"
     networks:
-      - traefik
+      - pasang-net
 
 networks:
-  traefik:
+  pasang-net:
     external: true
