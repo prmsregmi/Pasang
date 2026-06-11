@@ -1,6 +1,6 @@
 # Pasang
 
-A 2D side-scrolling platformer set in the Nepali Himalayas.
+A 2D side-scrolling platformer set in the Nepali Himalayas, inspired by the classic Super Mario games.
 
 You play as Pasang, a young Sherpa making his way from the foothills to the high passes. Run, jump, and climb through terraced farms, prayer-flag-lined trails, monasteries, and icy ridgelines. Dodge yaks, leap across suspension bridges, collect momos and khukuris, and ring the bell at the top of each level.
 
@@ -21,7 +21,9 @@ Contributions are welcome. By submitting a contribution, you agree it is license
 
 ## Legal
 
-Pasang is an original work. All characters, names, artwork, audio, and level designs in this project are original creations or are drawn from Nepali culture and Himalayan folklore. This project is not affiliated with, sponsored by, or endorsed by any other game, publisher, or platform, and it does not include or reproduce any third-party copyrighted assets or trademarks.
+Pasang is an original work. All characters, names, artwork, audio, and level designs in this project are original creations or are drawn from Nepali culture and Himalayan folklore.
+
+Super Mario and Mario are trademarks of Nintendo Co., Ltd. The reference above is purely descriptive, to indicate the genre and inspiration of this game. Pasang is not affiliated with, sponsored by, or endorsed by Nintendo, and it does not include or reproduce any Nintendo assets, characters, or other third-party copyrighted material.
 
 ## License
 
