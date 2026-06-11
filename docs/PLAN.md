@@ -71,25 +71,26 @@ Rivers/ice water are hazards crossed by suspension bridges.
 ## Engine feature checklist
 
 - [x] = done, update as we go (heartbeat resumes here)
-- [ ] Boot/scaffold: index.html, canvas scale, main loop, input (keyboard + touch)
-- [ ] Sprite system: palettes, pixel-grid rasterizer, sprite sheet, animations
-- [ ] Player physics: accel/skid/run, variable jump, sizes (small/big/khukuri),
+- [x] Boot/scaffold: index.html, canvas scale, main loop, input (keyboard + touch)
+- [x] Sprite system: palettes, pixel-grid rasterizer, sprite sheet, animations
+- [x] Player physics: accel/skid/run, variable jump, sizes (small/big/khukuri),
       damage + i-frames, death, ice friction
-- [ ] Tilemap: ASCII level decoder, solid/one-way/hazard/slippery/breakable/bumpable,
+- [x] Tilemap: ASCII level decoder, solid/one-way/hazard/slippery/breakable/bumpable,
       block contents, hidden blocks, coins, camera
-- [ ] Items: momo, khukuri, chiya, sel roti, coin, projectiles, particles, score popups
-- [ ] Enemies: yak, pika, langur(+ball), gorak, snapper, leopard, ice spirit
-- [ ] Fortress hazards: flame chain, stone slab, moving/falling platforms, springboard
-- [ ] Wells/sub-areas, prayer-wheel checkpoint, bell finish + tally, timer/hurry
-- [ ] HUD, pause, mute
-- [ ] Audio: SFX synth + music sequencer + all tracks (title, map, overworld, cave,
+- [x] Items: momo, khukuri, chiya, sel roti, coin, projectiles, particles, score popups
+- [x] Enemies: yak, pika, langur(+ball), gorak, snapper, leopard, ice spirit
+- [x] Fortress hazards: flame chain, stone slab, moving/falling platforms, springboard
+- [x] Wells/sub-areas, prayer-wheel checkpoint, bell finish + tally, timer/hurry
+- [x] HUD, pause, mute
+- [x] Audio: SFX synth + music sequencer + all tracks (title, map, overworld, cave,
       snow, fortress, chiya rush, hurry variants, clear, death, game over, ending)
-- [ ] Scenes: title, world map (node path), level intro card, game over, ending/credits
-- [ ] Save: localStorage (unlocks, best scores, settings)
-- [ ] Bosses: Bandit Boar, Langur King, Yeti (bridge + lever)
-- [ ] Levels: all 12 + sub-areas authored & tuned
-- [ ] Playwright smoke test: boots, no console errors, title renders, level playable
-- [ ] README: plug-and-play run instructions, controls, screenshots optional
+- [x] Scenes: title, world map (node path), level intro card, game over, ending/credits
+- [x] Save: localStorage (unlocks, best scores, settings)
+- [x] Bosses: Bandit Boar, Langur King, Yeti (bridge + lever)
+- [x] Levels: all 12 + sub-areas authored & tuned
+- [x] Playwright smoke test: boots, no console errors, title renders, level playable
+      (plus flow test: wells, power-ups, all 3 bosses, lever finale, ending, game over)
+- [x] README: plug-and-play run instructions, controls
 - [ ] Final pass: balance, juice (particles/screen shake), bugfixes, push
 
 ## Controls

@@ -46,7 +46,9 @@ const Game = {
     this.scene = null;
     this.paused = false;
     const def = LEVELS[idx];
-    this.level = new LevelState(def, this, { checkpoint: this.lastCheckpoint });
+    const cp = (this.lastCheckpoint && this.lastCheckpoint.idx === idx)
+      ? this.lastCheckpoint.pos : null;
+    this.level = new LevelState(def, this, { checkpoint: cp });
   },
 
   onLevelComplete() {
@@ -68,7 +70,9 @@ const Game = {
   onPlayerDeath() {
     this.run.lives--;
     this.run.size = 0;
-    if (this.level && this.level.checkpoint) this.lastCheckpoint = this.level.checkpoint;
+    if (this.level && this.level.checkpoint) {
+      this.lastCheckpoint = { idx: this.run.levelIdx, pos: this.level.checkpoint };
+    }
     if (this.run.lives <= 0) {
       this.lastCheckpoint = null;
       this.setScene('gameover');
