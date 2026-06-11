@@ -91,7 +91,13 @@ Rivers/ice water are hazards crossed by suspension bridges.
 - [x] Playwright smoke test: boots, no console errors, title renders, level playable
       (plus flow test: wells, power-ups, all 3 bosses, lever finale, ending, game over)
 - [x] README: plug-and-play run instructions, controls
-- [ ] Final pass: balance, juice (particles/screen shake), bugfixes, push
+- [x] Final pass: balance, juice (particles/screen shake), bugfixes, push
+
+## Status: COMPLETE
+
+All features built, verified in headless Chromium (smoke, flow, pause/mute,
+HTTP boot tests — all passing), and pushed. The game is plug-and-play:
+open index.html or serve the folder statically.
 
 ## Controls
 

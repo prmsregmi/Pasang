@@ -91,7 +91,7 @@ function decodeArea(rows, theme, areaIndex, levelSeed) {
         case 'k': entities.push(new Langur(px + 1, py + 1)); break;
         case 'G': entities.push(new Gorak(px + 1, py + 3)); break;
         case 'Z': entities.push(new Leopard(px - 2, py + 4)); break;
-        case 'i': entities.push(new IceSpirit(px + 2, py + 2)); break;
+        case 'i': entities.push(new IceSpirit(px + 2, py - 22)); break;
         case '1': entities.push(new BanditBoar(px - 6, py - 2)); break;
         case '2': entities.push(new LangurKing(px - 3, py - 10)); break;
         case '3': entities.push(new Yeti(px - 7, py - 20)); break;
