@@ -498,7 +498,7 @@ class LevelState {
       const bc = this.bridgeCollapse;
       bc.timer -= dt;
       if (bc.timer <= 0 && bc.x >= bc.x0) {
-        bc.timer = 0.06;
+        bc.timer = 0.045;
         if (this.tileAt(bc.x, bc.ty) === T.BRIDGE) {
           this.setTile(bc.x, bc.ty, T.EMPTY);
           this.spawn(new FallingPlank(bc.x, bc.ty));

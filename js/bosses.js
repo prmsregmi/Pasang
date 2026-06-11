@@ -7,6 +7,7 @@ class Boss extends Enemy {
   constructor(x, y, w, h, hp) {
     super(x, y, w, h);
     this.isBoss = true;
+    this.activated = true; // bosses gate themselves via `active` instead
     this.hp = hp;
     this.maxHp = hp;
     this.hitInvuln = 0;
