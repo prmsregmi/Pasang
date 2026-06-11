@@ -1,4 +1,5 @@
 # Pasang — A Himalayan Adventure
+Play here: https://pasang.pramesh.one
 
 > Built entirely by [Claude Code](https://claude.ai/code) from [a single prompt](prompt.md).
 
