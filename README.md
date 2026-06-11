@@ -1,5 +1,7 @@
 # Pasang — A Himalayan Adventure
 
+> Built entirely by [Claude Code](https://claude.ai/code) from [a single prompt](prompt.md).
+
 A complete 2D side-scrolling platformer set in the Nepali Himalayas, inspired by the
 classic Super Mario games. **Fully playable: 3 worlds, 12 levels, 3 boss fights, and
 an original soundtrack — all in plain HTML5/JavaScript with zero dependencies.**
@@ -9,6 +11,8 @@ to rescue his sister **Maya** from the **Yeti**. Run, jump, and climb through te
 farms, prayer-flag-lined trails, monasteries, and icy ridgelines. Dodge yaks, leap
 across suspension bridges, eat momos, sip chiya, throw khukuris, and ring the bell at
 the top of each level.
+
+![Pasang gameplay — cave level 1-2](docs/screenshot.png)
 
 ## How to play (plug-and-play)
 
