@@ -59,8 +59,9 @@ Scenes.title = {
     }
     drawTextCentered(ctx, 'ARROWS/WASD MOVE   Z/SPACE JUMP   X/SHIFT RUN', VIEW_W / 2, 212, '#9ab0c8');
     drawTextCentered(ctx, 'ENTER START   M MUTE', VIEW_W / 2, 224, '#9ab0c8');
-    // Pasang waving on a hill
+    // Pasang waving on a hill beside the flag
     drawSprite(ctx, 'p_victory', 38, 160);
+    drawSprite(ctx, Math.floor(this.t * 4) % 2 ? 'npflag2' : 'npflag1', 60, 138);
   },
 };
 
@@ -108,6 +109,9 @@ Scenes.map = {
     ctx.beginPath(); ctx.moveTo(0, VIEW_H); ctx.lineTo(0, 208);
     ctx.quadraticCurveTo(120, 180, 240, 205); ctx.lineTo(300, VIEW_H); ctx.fill();
 
+    // the great stupa watches over the valley
+    paintBoudhanath(ctx, 152, 214, 0.55, { flags: false });
+
     drawTextShadow(ctx, 'THE TRAIL TO THE YETI', 12, 8, '#fff', 1);
     drawText(ctx, 'W1 FOOTHILLS', 12, 222, '#2c5a2c');
     drawText(ctx, 'W2 MONASTERY HILLS', 130, 222, '#3a3a6a');
@@ -129,7 +133,10 @@ Scenes.map = {
       ctx.fillRect(n.x - 4, n.y - 4, 8, 8);
       ctx.strokeStyle = '#2a2018';
       ctx.strokeRect(n.x - 4.5, n.y - 4.5, 9, 9);
-      if (i === 11) drawSprite(ctx, 'bell', n.x - 8, n.y - 22);
+      if (i === 11) {
+        drawSprite(ctx, 'bell', n.x - 8, n.y - 22);
+        drawSprite(ctx, Math.floor(this.t * 4) % 2 ? 'npflag2' : 'npflag1', n.x - 26, n.y - 26);
+      }
     });
 
     // cursor: Pasang standing on the selected node

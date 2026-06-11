@@ -439,80 +439,163 @@ defSprite('p_victory', PAL_PASANG_RED, [
 // ITEMS
 // ===========================================================================
 
-// Momo (grow power-up) — steamed dumpling on a little leaf
+// Momo (grow power-up) — pleated dumpling steaming in a bamboo basket
 defSprite('it_momo', {
-  k: '#1a1418', M: '#f5e9d4', m: '#d8c4a0', d: '#b89c70', L: '#3f8c3f', l: '#2c6e2c',
+  k: '#1a1418', M: '#f8f0e0', m: '#d8c8a8', p: '#b8a888',
+  B: '#c89858', b: '#966e34', d: '#6e4e20', s: '#dcecf4',
 }, [
-  '......kkkk......',
-  '....kkMMMMkk....',
-  '...kMMmMMmMMk...',
+  '....s.....s.....',
+  '...s.....s......',
+  '...s..s..s......',
+  '....s..s........',
+  '.......kk.......',
+  '.....kkmmkk.....',
+  '....kMmMMmMk....',
+  '...kMpMmMpMMk...',
+  '..kMMMpMpMMMMk..',
   '..kMMMMMMMMMMk..',
-  '..kMmMMmMMmMMk..',
-  '.kMMMMMMMMMMMMk.',
-  '.kMdMMdMMdMMdMk.',
-  '.kMMMMMMMMMMMMk.',
-  '..kddddddddddk..',
-  '..LLLLLLLLLLLL..',
-  '.LLlLLLlLLLlLLL.',
-  '..LL..LL..LL....',
+  '.kBBBBBBBBBBBBk.',
+  '.kBdBbBdBbBdBBk.',
+  '.kBBBBBBBBBBBBk.',
+  '..kkkkkkkkkkkk..',
 ]);
 
-// Khukuri (projectile power-up) — curved blade with wooden hilt
+// Khukuri (projectile power-up) — the recurved blade with its cho notch
 defSprite('it_khukuri', {
-  k: '#1a1418', E: '#dfe6ee', e: '#aeb9c6', H: '#8a5a28', h: '#6b421c', G: '#e8b83a',
+  k: '#1a1418', E: '#e4eaf2', e: '#a8b4c2', d: '#76828e',
+  H: '#8a5a28', h: '#6b421c', G: '#e8b83a',
 }, [
-  '..........kk....',
-  '.........kEEk...',
-  '........kEEEk...',
-  '.......kEEEek...',
-  '......kEEEek....',
-  '.....kEEEEek....',
-  '....kEEEEek.....',
+  '...........kk...',
+  '..........kEEk..',
+  '.........kEEEk..',
+  '........kEEEEk..',
+  '.......kEEEEek..',
+  '......kEEEEeek..',
+  '.....kEEEEeek...',
+  '....kEEEEeek....',
   '...kEEEEeek.....',
-  '..kEEEEeek......',
-  '..kEEeeek.......',
-  '..kGGGk.........',
+  '..kEEEeeek......',
+  '..kEEeedk.......',
+  '..kEdk.k........',
+  '..kGGk..........',
   '..kHHhk.........',
   '..kHHhk.........',
   '...kkk..........',
 ]);
 
-// Chiya (invincibility) — steaming brass cup of butter tea
+// Chiya (invincibility) — a hot glass of milk tea
 defSprite('it_chiya', {
-  k: '#1a1418', B: '#e8b83a', b: '#b8862a', T: '#c87830', t: '#a85a20', W: '#ffffff',
+  k: '#1a1418', G: '#cfe0ec', T: '#c08a4e', t: '#a06c34', m: '#e0c8a0', W: '#e8f4fc',
 }, [
-  '....W.....W.....',
-  '.....W...W......',
-  '....W.....W.....',
-  '.....W...W......',
-  '..kkkkkkkkkkk...',
-  '..kTTTTTTTTTk...',
-  '.kBBBBBBBBBBBkk.',
-  '.kBbBBBBBBbBBkbk',
-  '.kBBBBBBBBBBBkbk',
-  '..kBbBBBBbBBkbk.',
-  '..kBBBBBBBBBkk..',
-  '...kBBBBBBBk....',
-  '....kkkkkkk.....',
+  '....W....W......',
+  '...W....W.......',
+  '...W.W..W.......',
+  '....W..W........',
+  '..kkkkkkkkkk....',
+  '..kGmmmmmmGk....',
+  '..kGTTTTTTGk....',
+  '..kGTtTTTtGk....',
+  '..kGTTTTTTGk....',
+  '...kGTtTTGk.....',
+  '...kGTTTTGk.....',
+  '....kkkkkk......',
 ]);
 
-// Sel roti (1-up) — golden ring of fried rice bread
+// Sel roti (1-up) — glossy golden-brown ring of fried rice bread
 defSprite('it_selroti', {
-  k: '#1a1418', G: '#e2a23a', g: '#b87c22', d: '#94601a',
+  k: '#1a1418', G: '#d8923a', g: '#b06e22', d: '#8a5418', W: '#f0c878',
 }, [
   '....kkkkkk......',
-  '..kkGGGGGGkk....',
-  '.kGGgGGGGgGGk...',
-  '.kGGkkkkkkGGk...',
-  'kGGk......kGGk..',
+  '..kkGGGWGGkk....',
+  '.kGWgGGGGgGGk...',
+  '.kGGkkkkkkGWk...',
+  'kGWk......kGGk..',
+  'kGgk......kgWk..',
+  'kWGk......kGGk..',
   'kGgk......kgGk..',
-  'kGGk......kGGk..',
-  'kGgk......kgGk..',
   '.kGGkkkkkkGGk...',
-  '.kGGgGGGgGGGk...',
-  '..kkGGGGGGkk....',
+  '.kGWgGGGgGWGk...',
+  '..kkGGGWGGkk....',
   '....kkkkkk......',
 ]);
+
+// Nepal's double-pennant flag on a pole — 2 flutter frames
+function defNepalFlag(name, flut) {
+  defSprite(name, {
+    k: '#171217', C: '#c8102e', c: '#9a0c22', B: '#1a3a8c',
+    W: '#f4f4f8', P: '#8a5a28', p: '#5e3c16', G: '#e8b83a',
+  }, flut === 0 ? [
+    '.kG.............',
+    '.kPB............',
+    '.kPBB...........',
+    '.kPBCBB.........',
+    '.kPBCCCBB.......',
+    '.kPBCWCCCBB.....',
+    '.kPBWWWCCCCB....',
+    '.kPBCWCCCCB.....',
+    '.kPBCCCCCB......',
+    '.kPBCCCB........',
+    '.kPBBCCCBB......',
+    '.kPBCCWCCCBB....',
+    '.kPBCWWWCCCCB...',
+    '.kPBCWWWWCCCCB..',
+    '.kPBCCWCCCCB....',
+    '.kPBCCCCCB......',
+    '.kPBCCCB........',
+    '.kPBCB..........',
+    '.kPB............',
+    '.kPp............',
+    '.kPp............',
+    '.kPp............',
+    '.kPp............',
+    '.kPp............',
+  ] : [
+    '.kG.............',
+    '.kPB............',
+    '.kPBB...........',
+    '.kPBCBB.........',
+    '.kPBCCCBBB......',
+    '.kPBCWCCCCB.....',
+    '.kPBWWWCCCB.....',
+    '.kPBCWCCCB......',
+    '.kPBCCCCB.......',
+    '.kPBCCCB........',
+    '.kPBBCCCBBB.....',
+    '.kPBCCWCCCCBB...',
+    '.kPBCWWWCCCCB...',
+    '.kPBCWWWWCCCB...',
+    '.kPBCCWCCCCB....',
+    '.kPBCCCCB.......',
+    '.kPBCCCB........',
+    '.kPBCB..........',
+    '.kPB............',
+    '.kPp............',
+    '.kPp............',
+    '.kPp............',
+    '.kPp............',
+    '.kPp............',
+  ]);
+}
+defNepalFlag('npflag1', 0);
+defNepalFlag('npflag2', 1);
+
+// Small wayside pagoda shrine (decor)
+defPaintedTile('shrine', 28, 30, (g) => {
+  // brick base
+  g.fillStyle = '#8a4a32'; g.fillRect(8, 18, 12, 12);
+  g.fillStyle = '#6e3826'; g.fillRect(8, 18, 12, 2); g.fillRect(12, 22, 4, 8);
+  // lower roof
+  g.fillStyle = '#3e2c1e';
+  g.beginPath(); g.moveTo(2, 18); g.lineTo(14, 10); g.lineTo(26, 18); g.fill();
+  g.fillStyle = '#5a4028'; g.fillRect(2, 17, 24, 2);
+  // upper tier
+  g.fillStyle = '#8a4a32'; g.fillRect(11, 8, 6, 4);
+  g.fillStyle = '#3e2c1e';
+  g.beginPath(); g.moveTo(6, 9); g.lineTo(14, 3); g.lineTo(22, 9); g.fill();
+  // gajur finial
+  g.fillStyle = '#e8b83a'; g.fillRect(13, 0, 2, 4);
+  g.fillRect(12, 2, 4, 1);
+});
 
 // Rupee coin — 4 spin frames
 const PAL_COIN = { k: '#7a5a10', G: '#f8d030', g: '#caa018', W: '#fff8c8' };

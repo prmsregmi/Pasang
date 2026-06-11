@@ -120,7 +120,8 @@ function decodeArea(rows, theme, areaIndex, levelSeed) {
           if (r < 0.10 && theme !== 'snow') decor.push({ s: 'tuft', x: x * TILE, y: y * TILE - 6 });
           else if (r < 0.15 && x < w - 2 && theme === 'hills') decor.push({ s: 'bush', x: x * TILE - 8, y: y * TILE - 16 });
           else if (r < 0.18) decor.push({ s: 'mani', x: x * TILE - 4, y: y * TILE - 14 });
-          else if (r < 0.24) decor.push({ s: 'flags', x: x * TILE - 32, y: y * TILE - 38, anim: true });
+          else if (r < 0.20 && theme !== 'snow') decor.push({ s: 'shrine', x: x * TILE - 6, y: y * TILE - 30 });
+          else if (r < 0.26) decor.push({ s: 'flags', x: x * TILE - 32, y: y * TILE - 38, anim: true });
           break; // only top surface of each column
         }
         if (t !== T.EMPTY) break;
@@ -132,6 +133,10 @@ function decodeArea(rows, theme, areaIndex, levelSeed) {
     for (let x = 4; x < w - 4; x += 6 + Math.floor(rng() * 4)) {
       decor.push({ s: 'lamp', x: x * TILE, y: 5 * TILE + Math.floor(rng() * 2) * TILE, anim: true });
     }
+  }
+  // the nation's flag flies beside every goal bell
+  if (goal) {
+    decor.push({ s: 'npflag', x: goal.x - 40, y: goal.groundY - 24, anim: true });
   }
 
   return { grid, w, h, meta, entities, wells, returnMarkers, decor, theme, playerStart };
